@@ -15,10 +15,12 @@
   .hero p { margin:8px 0 0; opacity:.9; font-size:14px; }
   main { max-width:720px; margin:0 auto; padding:32px 24px 64px; }
   h2 { font-size:18px; margin:32px 0 8px; }
+  h3 { font-size:16px; margin:24px 0 4px; }
   p, li { font-size:15px; }
   .muted { color:var(--muted); font-size:13px; }
   a { color:var(--accent); }
   .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin:16px 0; }
+  .card ul { margin:0; padding-left:1.2em; }
   hr { border:none; border-top:1px solid var(--line); margin:40px 0; }
   footer { text-align:center; color:var(--muted); font-size:12px; padding:24px; }
 </style>
@@ -29,35 +31,82 @@
     <p>生物マスター</p>
   </div>
   <main>
-    <p class="muted">最終更新日：2026年10月4日</p>
+    <p class="muted">最終更新日：2026年10月17日</p>
 
     <div class="card">
-      <strong>要点：</strong>本アプリはデータを収集しません。学習機能は通信を行わず、端末内で完結します。App内課金の商品情報の取得・購入・復元の際だけ、Appleのシステムが App Store と通信します。
+      <strong>要点：</strong>学習機能は端末内で動き、学習データは問題の報告にも含めません。報告の画面を開くと、iCloudにサインインしているかを確かめる通信があります。報告の本文を送るのは、あなたが自分で「送る」または「メールで送る」を押したときだけです（「送る」を押した報告は、通信できないときだけ、アプリを開いている間に後から自動で送り直します）。報告は任意で、送らなくてもアプリはすべて使えます。開発者は購入情報を収集しません。
     </div>
 
     <p>「生物マスター」（以下「本アプリ」）は、利用者のプライバシーを最大限に尊重します。</p>
 
     <h2>収集する情報</h2>
-    <p>本アプリは、個人情報を含む<strong>いかなるデータも収集・送信しません</strong>。</p>
+    <p>ふだんの利用で、アプリが個人情報を集めたり送ったりすることはありません。例外は、あなたが自分で<a href="#issue-report">問題の報告</a>を送ったときです。</p>
     <ul>
-      <li>氏名・メールアドレス・電話番号などの個人情報を取得しません。</li>
+      <li>アプリが氏名・メールアドレス・電話番号などを入力させたり、取得したりすることはありません（メールで報告を送った場合は、送信元のメールアドレスが開発者に届きます）。</li>
       <li>アカウント登録やログインは必要ありません。</li>
       <li>位置情報・連絡先・写真・カメラ・マイク・端末識別子などにアクセスしません。</li>
     </ul>
     <p>なお、利用者が端末の設定で、解析データをアプリデベロッパと共有することを許可した場合に限り、Apple の仕組みを通じて匿名のクラッシュ情報などが開発者に提供されることがあります。これは Apple が提供する機能によるもので、本アプリ自体が収集・送信するものではありません。</p>
 
     <h2>学習記録の取り扱い</h2>
-    <p>解答履歴・成績・ブックマーク・バーチャル実験室のメモ（以下「実験のメモ」）・表示の設定などのデータは、<strong>利用者の端末内にのみ保存</strong>され、本アプリが独自に外部へ送信することはありません。ただし、端末全体のバックアップ（iCloud・パソコン）には、OS の機能として含まれることがあります。アプリを削除すると、これらのデータも端末から削除されます。また、アプリの「設定」→「データ」→「成績・ブックマークをリセット」を実行すると、解答履歴・成績の推移・ブックマーク・講義の理解度チェック・実験のメモが削除されます。</p>
+    <p>解答履歴・成績・ブックマーク・バーチャル実験室のメモ（以下「実験のメモ」）・表示の設定などのデータは、<strong>利用者の端末内にのみ保存</strong>され、問題の報告を送るときも送信しません。ただし、端末全体のバックアップ（iCloud・パソコン）には、OS の機能として含まれることがあります。アプリを削除すると、これらのデータも端末から削除されます。また、アプリの「設定」→「データ」→「成績・ブックマークをリセット」を実行すると、解答履歴・成績の推移・ブックマーク・講義の理解度チェック・実験のメモが削除されます。</p>
 
     <h2>通信について</h2>
-    <p>学習機能（問題・講義・実験・記録など）は<strong>インターネット通信を行わず</strong>、オフラインで動作します。</p>
+    <p>学習機能（問題・講義・実験・記録など）は端末内で動き、オフラインで利用できます。</p>
     <p><strong>App内課金：</strong>「生物マスター Pro」の商品情報の取得・購入・復元の際には、AppleのシステムがApp Storeと通信する場合があります。決済はAppleが処理し、本アプリは購入情報を開発者または第三者のサーバーへ送信せず、開発者は購入に伴う個人情報・購入情報を収集しません。</p>
+    <p><strong>問題の報告：</strong>報告の画面を開くと、iCloudにサインインしているかを確かめるため、AppleのiCloudと通信します。報告の本文を送るのは、あなたが「送る」または「メールで送る」を押したときだけです。くわしくは下の「<a href="#issue-report">問題の報告</a>」をご覧ください。</p>
+
+    <h2 id="issue-report">問題の報告</h2>
+    <p>解答後の解説画面にある「この問題を報告する」または設定の「問題報告・フィードバック」から、問題や解説のまちがい、アプリへの意見を開発者に送ることができます。</p>
+    <div class="card">
+      <ul>
+        <li><strong>送るかどうかは自由です。</strong>送らなくても、アプリの機能はすべて使えます。</li>
+        <li><strong>自動では送りません。</strong>あなたが「送る」または「メールで送る」を押したときだけ送ります。</li>
+        <li><strong>送る前に画面で確かめられます。</strong>報告の画面には、対象の問題やあなたが書いた内容など、送る情報の主なものと、AIでの仕分けに使ってよいかの選択が表示されます。</li>
+      </ul>
+    </div>
+
+    <h3>送る情報</h3>
+    <ul>
+      <li><strong>書いた内容：</strong>「気になった点」の文と、「どんなこと？」で選んだ種類</li>
+      <li><strong>問題報告のメールに入る情報：</strong>書いた内容（「気になった点」の文と、選んだ種類）、問題ID・分野名・問題のタイトル（問題について報告するとき）、アプリのバージョンとビルド番号、iOSのバージョン、機種の型番（たとえば「iPhone14,6」）、実行環境（iPhone・iPadで動いているか、Macで動いているか）、文字サイズの設定、AIでの仕分けに使ってよいか</li>
+      <li><strong>iCloudで送る報告に入る情報：</strong>上記の書いた内容、問題ID・分野名とアプリ内部の分野コード・問題のタイトル（問題について報告するとき）、上記のアプリのバージョンとビルド番号・iOSのバージョン・機種の型番・実行環境・文字サイズの設定、報告を確定した日時、報告番号（報告のたびに新しく作る番号で、あなたや端末を表すものではありません）、AIでの仕分けに使ってよいかとそのとき表示していた説明の版。</li>
+      <li><strong>アプリで送ると決めた報告をメールに切り替えた場合：</strong>アプリで送ると決めた報告は、まず端末に保存されます。iCloudに届く前でも後でも、その報告を「メールで送る」に切り替えると、メールに報告番号が入ります。iCloudが受け付けていた場合はその受け付けた日時が、受け付けたか確かめられない場合は「アプリからも届いている場合があります」という一文が、メールに入ることがあります。</li>
+    </ul>
+    <p>iCloudで送った場合、iCloudの仕組みにより、送った人のiCloudアカウントごとに決まる識別子と受け付けた日時が報告に付きます。開発者がこの識別子から名前やメールアドレスを調べることはありません。メールで送った場合は、メールの送信元（メールアドレスや表示名）が開発者に届きます。</p>
+    <p><strong>送らないもの：</strong>名前、電話番号、位置情報、連絡先、写真、広告識別子、端末の名前、学習記録（解答履歴・成績など）、購入情報。アプリから送る場合は、メールアドレスも送りません。</p>
+    <p>報告の文には、名前・学校名・連絡先など、あなたやほかの人がだれか分かることを書かないでください。</p>
+
+    <h3>送り方</h3>
+    <p>iCloudにサインインしていれば、アプリから直接送ります。報告はAppleのiCloud（CloudKit）に保存されます。iCloudにサインインしていないとき、学校などの管理でiCloudを使えないとき、アプリからの受け付けを準備中・停止中のときは、メールで送ってください。「メールで送る」を押すとメールアプリが開き、内容を確かめてから、あなたがメールアプリで送信します。</p>
+    <p>アプリから送る報告は、送ると決めた時点でいったん端末に保存し、通信できないときは、アプリを開いている間に7日まで自動で送り直します。届く前なら「送るのをやめる」で取り消すことができ、その報告は端末から消えます。届いたことが確かめられたら、報告の文は端末から消します（受け付けた日時などの記録だけを、受け付けから90日まで残します）。7日たっても送れなかった報告は送らず、次にアプリを開いたときに端末から消します。</p>
+
+    <h3>使いみち</h3>
+    <p>届いた報告は、問題や解説のまちがい、アプリの不具合を確かめて直すため、また今後の改善の参考にするためだけに使います。広告・販売・トラッキングには使いません。個々の報告への返信はしていません。</p>
+
+    <h3>保存する期間</h3>
+    <p>アプリから送った報告は、AppleのiCloudに保存され、開発者が管理するMacに取り出して確認します。報告は、届いてから90日を過ぎたら、iCloudと開発者のMacから消します。メールで届いた報告も、届いてから90日を過ぎたら、開発者のメールボックスから消します。</p>
+    <p>90日を過ぎた報告は、開発者がおおむね月1回行う削除作業で消します。そのため、消えるまで最大で1か月ほど遅れることがあります。作業の日にMacが使えなかったり通信できなかったりしたときは、復旧したあとすぐに消します。Appleの内部での保存は、Appleの方針に従います。</p>
+    <p>報告をもとに直した内容（問題の修正など）は、あなたがだれか分からない形で、アプリの開発記録に残ります。</p>
+
+    <h3 id="issue-report-ai">AIでの仕分け</h3>
+    <p>報告の画面で「AIでの仕分けに使ってよい」をオンにした報告だけを、下のようにAIに渡します。はじめはオフになっています。オフのままでも報告は送れ、扱いは変わりません。</p>
+    <p>AIに渡すのは、報告そのものではありません。開発者が報告の文を読み、名前などの個人情報を取り除いて書き直した要約と、問題ID・アプリのバージョン・実行環境だけを渡します。iCloudの識別子やメールアドレスは渡しません。</p>
+    <ul>
+      <li><strong>OpenAI：</strong>この要約などをOpenAIのAIに送り、報告を種類ごとに仕分けます。</li>
+      <li><strong>Anthropic：</strong>この要約などと仕分けの結果を、開発の手伝いとしてAnthropicのAI（Claude）が読みます。</li>
+    </ul>
+    <p>OpenAIとAnthropicは、どちらもApple以外の会社です。渡した資料をそれぞれの会社がどう扱うか（AIの学習に使うか、どのくらいの期間保存するかなど）は、それぞれの会社の方針と、開発者が使っているサービスの設定によります。AIの判断だけで答えや問題を変えることはなく、直すかどうかは開発者が確かめて決めます。</p>
+
+    <h3>報告の削除・同意の取り消し</h3>
+    <p>送った報告を消してほしいとき、AIでの仕分けへの同意を取り消したいときは、下の「お問い合わせ」のメールアドレスへ連絡してください。報告を見つけられるよう、送った日時と内容（問題IDなど）を書いてください。メールで送った報告の本文に「報告番号」があれば、それも書いてください。すでに終わった処理は、さかのぼって取り消せないことがあります。</p>
 
     <h2>広告・分析・第三者提供</h2>
-    <p>本アプリは、広告SDK・アクセス解析ツール・第三者へのデータ提供を<strong>一切行いません</strong>。</p>
+    <p>本アプリは、広告SDK・アクセス解析ツールを<strong>一切使いません</strong>。データを販売したり、広告やトラッキングに使ったりすることもありません。</p>
+    <p>第三者への提供は、あなたが同意した問題の報告について、個人情報を取り除いた要約などをOpenAIとAnthropicのAIに渡すことだけです（<a href="#issue-report-ai">AIでの仕分け</a>）。報告の保存には、AppleのiCloudを使います。</p>
 
     <h2>対象年齢</h2>
-    <p>本アプリは全年齢を対象としており、子どもから個人情報を収集することはありません。</p>
+    <p>本アプリは全年齢を対象としており、子どもを含め、利用者に個人情報の入力を求めることはありません。</p>
 
     <h2>ポリシーの変更</h2>
     <p>本ポリシーを変更する場合は、本ページ上で改訂版を掲示します。</p>
@@ -68,7 +117,17 @@
     <hr>
 
     <h2>Privacy Policy (English)</h2>
-    <p>"生物マスター" does <strong>not collect any data</strong>, including personal information. It requires no account or login, and does not access your location, contacts, photos, camera, microphone, or device identifiers. Your answer history, scores, bookmarks, notes, and settings are stored <strong>only on your device</strong> and are never sent anywhere by the app itself, although iOS may include them in full-device backups to iCloud or a computer; they are removed when you delete the app. Learning features <strong>work offline without network connections</strong>. Loading product information, purchases and restoration of the optional in-app purchase "生物マスター Pro" may involve communication with the App Store through Apple’s systems; Apple processes payment, and the developer does not collect personal or purchase information. The app contains no ads, analytics, or third-party SDKs. If you allow analytics data to be shared with app developers in your device settings, Apple may provide the developer with anonymous crash reports and similar diagnostics through its own systems; the app itself does not collect or send them. Contact: <a href="mailto:otsukadon2017@icloud.com">otsukadon2017@icloud.com</a></p>
+    <p>During normal use, "生物マスター" does not ask users to enter personal information. It requires no account or login, and does not access your location, contacts, photos, camera, microphone, or device identifiers. Your answer history, scores, bookmarks, notes, and settings are stored on your device and are not included in issue reports. An operating-system backup of the whole device (to iCloud or a computer) may include this data; deleting the app removes it from the device. Learning features work offline. Purchases and restoration of "生物マスター Pro" may involve communication with the App Store through Apple’s systems; Apple processes payment, while the developer does not collect personal or purchase information. The app contains no ads, analytics, or third-party SDKs. If you allow analytics data to be shared with app developers in your device settings, Apple may provide the developer with anonymous crash reports and similar diagnostics through its own systems; the app itself does not collect or send them. Contact: <a href="mailto:otsukadon2017@icloud.com">otsukadon2017@icloud.com</a></p>
+
+    <h3 id="issue-report-en">Issue reports</h3>
+    <p>You can send an issue report from the explanation screen shown after answering a question (「この問題を報告する」) or an app-wide report from Settings (「問題報告・フィードバック」). Reporting is optional, and every feature works without it. Opening the report screen communicates with iCloud to check whether you are signed in. The report itself is sent only when you tap 「送る」 or 「メールで送る」; a report you tapped 「送る」 for is retried automatically while the app is open only if it could not be sent. Before sending, the screen shows the main items and the AI-sorting choice.</p>
+    <p><strong>What is sent:</strong> An email report contains the text you write and the type you choose; for a question report, the question ID, category name, and title; the app version and build, iOS version, device model code (for example, "iPhone14,6"), runtime (whether the app is running on iPhone or iPad, or on Mac), and your text-size setting; and your AI-sorting choice. An iCloud report contains those items plus the internal category code (for question reports), the time you confirmed the report, a report number (a new number created for each report that does not identify you or your device), and the version of the AI-sorting notice shown. iCloud also assigns an identifier per iCloud account and attaches the time of receipt; the developer does not use this identifier to look up your name or email address. A report you chose to send in the app is first saved on your device. If you then switch it to email, before or after it reaches iCloud, the email includes its report number, and may also include the time iCloud received it, or a line saying it may also have arrived through the app if receipt cannot be confirmed. The email sender’s address and display name are visible to the developer. We do not send your name, phone number, location, contacts, photos, advertising identifier, device name, learning records, or purchase information. Please do not write names, school names, or contact details in a report.</p>
+    <p><strong>How it is sent and kept:</strong> If you are signed in to iCloud, the app can send the report to Apple’s iCloud (CloudKit). Otherwise, or while in-app reporting is unavailable, you can send it with your email app. An in-app report is first saved on your device and retried while the app is open for up to seven days. If it still cannot be sent after seven days, it is not sent and is removed from the device the next time you open the app. You can cancel it before it arrives, and it is removed from the device. Once receipt is confirmed, the report text is removed; only the receipt record remains on the device for up to 90 days. Reports are retrieved to a Mac managed by the developer. Once 90 days have passed since receipt, reports are deleted from iCloud and the developer’s Mac, and reports received by email are deleted from the developer’s mailbox. The developer deletes such reports in a manual deletion pass held about once a month, so deletion may be delayed by up to about a month; if the Mac or network is unavailable on that day, deletion happens as soon as it recovers. Apple’s internal storage follows Apple’s policies. Fixes made from reports remain in the app’s development records in a form that does not identify you. Reports are used only to check and fix problems and to improve the app, never for advertising, sale, or tracking. We do not reply to individual reports.</p>
+    <p id="issue-report-ai-en"><strong>AI sorting:</strong> Only if you turn on the AI-sorting switch (「AIでの仕分けに使ってよい」, off by default) for a report, the developer reads it and writes a summary with personal information removed. Only that summary, the question ID, app version, and runtime are used: they are sent to an AI from OpenAI to sort reports by type, and they and the sorting results are read by Anthropic’s AI (Claude) to assist development. The report itself, the iCloud identifier, and email addresses are not shared. OpenAI and Anthropic are companies other than Apple; how each handles this material (for example, whether it is used for AI training and how long it is kept) depends on that company’s policies and the settings of the services the developer uses. You can send a report with this setting off, and it is handled the same way. AI output alone never changes answers or questions; the developer checks and decides.</p>
+    <p><strong>Deletion and withdrawal:</strong> To have a report deleted or to withdraw your AI consent, email us with the date and time you sent it and its content (such as the question ID), plus the report number if your email report includes one. Processing that has already finished may not be reversible.</p>
+
+    <h3>Age range</h3>
+    <p>The app is for all ages and does not ask users, including children, to enter personal information.</p>
   </main>
   <footer>© 2026 Ryo Otsuka</footer>
 </body>
